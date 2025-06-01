@@ -10,8 +10,8 @@ const Projects = () => {
       description: "Advanced e-commerce platform with real-time analytics, AI-powered recommendations, and military-grade security protocols.",
       image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=500&h=300&fit=crop",
       tech: ["REACT", "NODE.JS", "POSTGRESQL", "REDIS"],
-      github: "#",
-      live: "#",
+      github: "https://github.com",
+      live: "https://example.com",
       status: "DEPLOYED"
     },
     {
@@ -19,8 +19,8 @@ const Projects = () => {
       description: "High-performance task management system with real-time collaboration, WebSocket integration, and advanced data visualization.",
       image: "https://images.unsplash.com/photo-1551808525-51a94da548ce?w=500&h=300&fit=crop",
       tech: ["REACT", "FIREBASE", "WEBSOCKET", "D3.JS"],
-      github: "#",
-      live: "#",
+      github: "https://github.com",
+      live: "https://example.com",
       status: "ACTIVE"
     },
     {
@@ -28,8 +28,8 @@ const Projects = () => {
       description: "Advanced weather intelligence system with predictive analytics, satellite data integration, and real-time threat assessment.",
       image: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=500&h=300&fit=crop",
       tech: ["VUE.JS", "PYTHON", "TENSORFLOW", "AWS"],
-      github: "#",
-      live: "#",
+      github: "https://github.com",
+      live: "https://example.com",
       status: "BETA"
     }
   ];
@@ -93,11 +93,20 @@ const Projects = () => {
               </CardContent>
               
               <CardFooter className="flex gap-3">
-                <Button variant="outline" size="sm" className="flex-1 border-gray-600 text-gray-300 hover:border-cyan-400 hover:text-cyan-400 transition-colors font-mono">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="flex-1 border-gray-600 text-gray-300 hover:border-cyan-400 hover:text-cyan-400 transition-colors font-mono"
+                  onClick={() => window.open(project.github, '_blank')}
+                >
                   <Github size={16} className="mr-2" />
                   CODE
                 </Button>
-                <Button size="sm" className="flex-1 bg-cyan-600 hover:bg-cyan-500 text-black font-bold font-mono">
+                <Button 
+                  size="sm" 
+                  className="flex-1 bg-cyan-600 hover:bg-cyan-500 text-black font-bold font-mono"
+                  onClick={() => window.open(project.live, '_blank')}
+                >
                   <Terminal size={16} className="mr-2" />
                   DEPLOY
                 </Button>

@@ -3,6 +3,13 @@ import { ArrowDown, Github, Linkedin, Mail, Terminal, Code2 } from "lucide-react
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center bg-black text-white relative overflow-hidden">
       {/* Cyber grid background */}
@@ -48,29 +55,38 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="bg-cyan-600 hover:bg-cyan-500 text-black font-bold px-8 py-3 border border-cyan-400 shadow-lg shadow-cyan-400/25 transition-all duration-300 hover:shadow-cyan-400/50">
+            <Button 
+              size="lg" 
+              className="bg-cyan-600 hover:bg-cyan-500 text-black font-bold px-8 py-3 border border-cyan-400 shadow-lg shadow-cyan-400/25 transition-all duration-300 hover:shadow-cyan-400/50"
+              onClick={() => scrollToSection('projects')}
+            >
               <Code2 className="mr-2" size={20} />
               VIEW_PROJECTS
             </Button>
-            <Button variant="outline" size="lg" className="border-green-400 text-green-400 hover:bg-green-400 hover:text-black font-bold px-8 py-3 shadow-lg shadow-green-400/25 transition-all duration-300 hover:shadow-green-400/50">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-green-400 text-green-400 hover:bg-green-400 hover:text-black font-bold px-8 py-3 shadow-lg shadow-green-400/25 transition-all duration-300 hover:shadow-green-400/50"
+              onClick={() => scrollToSection('contact')}
+            >
               CONTACT_ME
             </Button>
           </div>
           
           <div className="flex justify-center space-x-8">
-            <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
               <Github size={28} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
               <Linkedin size={28} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
+            <a href="mailto:contact@example.com" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
               <Mail size={28} />
             </a>
           </div>
         </div>
         
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer" onClick={() => scrollToSection('about')}>
           <ArrowDown className="text-cyan-400" size={32} />
         </div>
       </div>
