@@ -27,6 +27,8 @@ const About = () => {
               <br />
               &nbsp;&nbsp;<span className="text-red-400">education</span>: <span className="text-yellow-400">"NJIT"</span>,
               <br />
+              &nbsp;&nbsp;<span className="text-red-400">degree</span>: <span className="text-yellow-400">"Computer Science B.S."</span>
+              <br />
               &nbsp;&nbsp;<span className="text-red-400">passion</span>: <span className="text-yellow-400">"Cutting-edge tech"</span>
               <br />
               {"}"};
