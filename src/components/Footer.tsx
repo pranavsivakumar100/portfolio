@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4 font-mono text-cyan-400">
-              PRANAV&gt;DEV
+              PRANAV SIVAKUMAR
             </h3>
             <p className="text-gray-400 mb-4 font-mono">
               Elite developer crafting next-generation digital experiences 
