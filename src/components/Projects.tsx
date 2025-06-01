@@ -6,32 +6,15 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const Projects = () => {
   const projects = [
     {
-      title: "CYBER_COMMERCE",
-      description: "Advanced e-commerce platform with real-time analytics, AI-powered recommendations, and military-grade security protocols.",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=500&h=300&fit=crop",
-      tech: ["REACT", "NODE.JS", "POSTGRESQL", "REDIS"],
-      github: "https://github.com",
-      live: "https://example.com",
+      title: "NOTES_FOR_DEVS",
+      description: "I couldn't find a note-taking platform tailored for Computer Science students like myself, so I made my own.",
+      image: "/bedrock3.png",
+      tech: ["REACT", "TYPESCRIPT", "PYTHON", "TAILWIND CSS"],
+      github: "https://github.com/pranavsivakumar100/bedrock-notes",
+      live: "https://bedrock-notes.netlify.app/",
       status: "DEPLOYED"
     },
-    {
-      title: "TASK_NEXUS",
-      description: "High-performance task management system with real-time collaboration, WebSocket integration, and advanced data visualization.",
-      image: "https://images.unsplash.com/photo-1551808525-51a94da548ce?w=500&h=300&fit=crop",
-      tech: ["REACT", "FIREBASE", "WEBSOCKET", "D3.JS"],
-      github: "https://github.com",
-      live: "https://example.com",
-      status: "ACTIVE"
-    },
-    {
-      title: "WEATHER_MATRIX",
-      description: "Advanced weather intelligence system with predictive analytics, satellite data integration, and real-time threat assessment.",
-      image: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=500&h=300&fit=crop",
-      tech: ["VUE.JS", "PYTHON", "TENSORFLOW", "AWS"],
-      github: "https://github.com",
-      live: "https://example.com",
-      status: "BETA"
-    }
+
   ];
 
   const getStatusColor = (status: string) => {
