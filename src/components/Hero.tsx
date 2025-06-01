@@ -72,13 +72,13 @@ const Hero = () => {
           </div>
           
           <div className="flex justify-center space-x-8">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
+            <a href="https://github.com/pranavsivakumar100" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
               <Github size={28} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
+            <a href="https://www.linkedin.com/in/pranav-s-b5925b212/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
               <Linkedin size={28} />
             </a>
-            <a href="mailto:contact@example.com" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
+            <a href="mailto:pranav.sivakumar100@gmail.com" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 hover:scale-110 transform">
               <Mail size={28} />
             </a>
           </div>
