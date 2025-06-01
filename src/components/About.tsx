@@ -21,9 +21,11 @@ const About = () => {
             <p className="text-lg text-gray-300 leading-relaxed font-mono">
               <span className="text-cyan-400">const</span> <span className="text-white">developer</span> = {"{"}
               <br />
+              &nbsp;&nbsp;<span className="text-red-400">name</span>: <span className="text-yellow-400">"Pranav Sivakumar"</span>,
+              <br />
               &nbsp;&nbsp;<span className="text-red-400">experience</span>: <span className="text-yellow-400">"5+ years"</span>,
               <br />
-              &nbsp;&nbsp;<span className="text-red-400">specialization</span>: <span className="text-yellow-400">"Full-Stack"</span>,
+              &nbsp;&nbsp;<span className="text-red-400">education</span>: <span className="text-yellow-400">"NJIT"</span>,
               <br />
               &nbsp;&nbsp;<span className="text-red-400">passion</span>: <span className="text-yellow-400">"Cutting-edge tech"</span>
               <br />
