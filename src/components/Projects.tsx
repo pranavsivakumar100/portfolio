@@ -17,7 +17,7 @@ const Projects = () => {
     {
       title: "CRYPTO_CROWDFUNDING",
       description: "Built a Web3 crowdfunding platform where people can get funds for projects through Cryptocurrency via donations. It features smart contracts, a UI for campaign creation and tracking, and Ethereum blockchain integration.",
-      image: "/crowdfunding",
+      image: "/crowdfunding.png",
       tech: ["SOLIDITY", "REACT", "NODE.JS"],
       github: "https://github.com/pranavsivakumar100/bedrock-notes",
       live: "https://bedrock-notes.netlify.app/",
