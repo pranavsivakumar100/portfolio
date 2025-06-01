@@ -11,7 +11,7 @@ const Projects = () => {
       image: "/bedrock3.png",
       tech: ["REACT", "TYPESCRIPT", "PYTHON", "TAILWIND CSS"],
       github: "https://github.com/pranavsivakumar100/bedrock-notes",
-      live: "https://bedrock-notes.netlify.app/",
+      live: "www.pranav.info",
       status: "DEPLOYED"
     },
 

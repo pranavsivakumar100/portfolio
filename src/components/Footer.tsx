@@ -15,20 +15,20 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4 font-mono text-cyan-400">
-              JOHN&gt;DEV
+              PRANAV&gt;DEV
             </h3>
             <p className="text-gray-400 mb-4 font-mono">
-              Elite full-stack developer crafting next-generation digital experiences 
+              Elite developer crafting next-generation digital experiences 
               with cutting-edge technology stacks.
             </p>
             <div className="flex space-x-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a href="https://github.com/pranavsivakumar100" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a href="https://www.linkedin.com/in/pranav-s-b5925b212/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:contact@example.com" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a href="mailto:pranav.sivakumar100@gmail.com" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Mail size={20} />
               </a>
             </div>
@@ -47,9 +47,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-purple-400 font-mono">QUICK_LINKS</h4>
             <ul className="space-y-2 text-gray-400 font-mono">
-              <li><a href="#" className="hover:text-purple-400 transition-colors">&gt; Resume</a></li>
-              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">&gt; GitHub</a></li>
-              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">&gt; LinkedIn</a></li>
+              <li><a href="https://www.linkedin.com/in/pranav-s-b5925b212/" className="hover:text-purple-400 transition-colors">&gt; Resume</a></li>
+              <li><a href="https://github.com/pranavsivakumar100" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">&gt; GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/pranav-s-b5925b212/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">&gt; LinkedIn</a></li>
               <li><button onClick={() => scrollToSection('contact')} className="hover:text-purple-400 transition-colors">&gt; Get In Touch</button></li>
             </ul>
           </div>
@@ -58,7 +58,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
           <p className="text-gray-400 flex items-center justify-center font-mono">
             <Terminal size={16} className="mx-1 text-cyan-400" /> 
-            Coded with precision by JOHN&gt;DEV
+            Coded with precision by Pranav Sivakumar
           </p>
           <p className="text-gray-400 mt-4 md:mt-0 font-mono">
             © 2024 ALL_RIGHTS_RESERVED
