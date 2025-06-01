@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Terminal, Code } from "lucide-react";
+import { Github, Linkedin, Mail, Terminal } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -38,12 +38,12 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-purple-400 font-mono">SERVICES</h4>
+            <h4 className="text-lg font-semibold mb-4 text-purple-400 font-mono">QUICK_LINKS</h4>
             <ul className="space-y-2 text-gray-400 font-mono">
-              <li className="flex items-center"><Code size={14} className="mr-2 text-purple-400" />Web Development</li>
-              <li className="flex items-center"><Terminal size={14} className="mr-2 text-purple-400" />System Architecture</li>
-              <li className="flex items-center"><Code size={14} className="mr-2 text-purple-400" />Performance Optimization</li>
-              <li className="flex items-center"><Terminal size={14} className="mr-2 text-purple-400" />Technical Consulting</li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">&gt; Resume</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">&gt; GitHub</a></li>
+              <li><a href="#" className="hover:text-purple-400 transition-colors">&gt; LinkedIn</a></li>
+              <li><a href="#contact" className="hover:text-purple-400 transition-colors">&gt; Get In Touch</a></li>
             </ul>
           </div>
         </div>
