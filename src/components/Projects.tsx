@@ -11,10 +11,18 @@ const Projects = () => {
       image: "/bedrock3.png",
       tech: ["REACT", "TYPESCRIPT", "PYTHON", "TAILWIND CSS"],
       github: "https://github.com/pranavsivakumar100/bedrock-notes",
-      live: "www.pranav.info",
+      live: "https://bedrock-notes.netlify.app/",
       status: "DEPLOYED"
     },
-
+    {
+      title: "CRYPTO_CROWDFUNDING",
+      description: "Built a Web3 crowdfunding platform where people can get funds for projects through Cryptocurrency. It features smart contracts for campaign management and transactions, a React-based user interface for campaign creation and tracking, and seamless Ethereum blockchain integration via Web3.",
+      image: "/bedrock3.png",
+      tech: ["REACT", "TYPESCRIPT", "PYTHON", "TAILWIND CSS"],
+      github: "https://github.com/pranavsivakumar100/bedrock-notes",
+      live: "https://bedrock-notes.netlify.app/",
+      status: "DEPLOYED"
+    }
   ];
 
   const getStatusColor = (status: string) => {
