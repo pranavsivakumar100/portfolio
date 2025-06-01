@@ -39,19 +39,17 @@ const Hero = () => {
           </div>
           
           <h1 className="text-6xl md:text-8xl font-bold mb-6 font-mono">
-            <span className="text-white">JOHN</span>
+            <span className="text-white">PRANAV</span>
             <span className="text-cyan-400 ml-2 animate-pulse">&gt;</span>
             <span className="text-green-400">DEV</span>
           </h1>
           
           <div className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto font-mono">
             <span className="text-cyan-400">[</span>
-            FULL-STACK DEVELOPER
+              Building digital solutions with cutting-edge tech
             <span className="text-cyan-400">]</span>
             <br />
-            <span className="text-green-400">/</span>
-            Architecting digital solutions with cutting-edge tech
-            <span className="text-green-400">/</span>
+            
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

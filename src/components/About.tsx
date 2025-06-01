@@ -1,83 +1,122 @@
 
-import { Code, Shield, Zap, Terminal } from "lucide-react";
+import { ExternalLink, Github, Terminal } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
-const About = () => {
+const Projects = () => {
+  const projects = [
+    {
+      title: "NOTES_FOR_DEVS",
+      description: "I couldn't find a note-taking platform tailored for Computer Science students like myself, so I made my own.",
+      image: "/bedrock3.png",
+      tech: ["REACT", "TYPESCRIPT", "PYTHON", "TAILWIND CSS"],
+      github: "https://github.com",
+      live: "https://example.com",
+      status: "DEPLOYED"
+    },
+    // {
+    //   title: "CRYPTO_TRACKER",
+    //   description: "Made a cryptocurrency tracker to track the current price of popular coins.",
+    //   image: "https://images.unsplash.com/photo-1551808525-51a94da548ce?w=500&h=300&fit=crop",
+    //   tech: ["REACT", "FIREBASE", "WEBSOCKET", "D3.JS"],
+    //   github: "https://github.com",
+    //   live: "https://example.com",
+    //   status: "ACTIVE"
+    // },
+    // {
+    //   title: "WEATHER_MATRIX",
+    //   description: "Advanced weather intelligence system with predictive analytics, satellite data integration, and real-time threat assessment.",
+    //   image: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=500&h=300&fit=crop",
+    //   tech: ["VUE.JS", "PYTHON", "TENSORFLOW", "AWS"],
+    //   github: "https://github.com",
+    //   live: "https://example.com",
+    //   status: "BETA"
+    // }
+  ];
+
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case "DEPLOYED": return "text-green-400 border-green-400";
+      case "ACTIVE": return "text-cyan-400 border-cyan-400";
+      case "BETA": return "text-yellow-400 border-yellow-400";
+      default: return "text-gray-400 border-gray-400";
+    }
+  };
+
   return (
-    <section id="about" className="py-20 px-4 bg-gray-900 text-white">
+    <section id="projects" className="py-20 px-4 bg-black text-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-mono">
-            <span className="text-cyan-400">&lt;</span>
-            ABOUT_ME
-            <span className="text-cyan-400">/&gt;</span>
+            <span className="text-cyan-400">[</span>
+            PROJECTS
+            <span className="text-cyan-400">]</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto font-mono">
-            <span className="text-green-400">//</span> Building the future, one line of code at a time
+            <span className="text-green-400">//</span> Elite projects showcase
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <p className="text-lg text-gray-300 leading-relaxed font-mono">
-              <span className="text-cyan-400">const</span> <span className="text-white">developer</span> = {"{"}
-              <br />
-              &nbsp;&nbsp;<span className="text-red-400">experience</span>: <span className="text-yellow-400">"5+ years"</span>,
-              <br />
-              &nbsp;&nbsp;<span className="text-red-400">specialization</span>: <span className="text-yellow-400">"Full-Stack"</span>,
-              <br />
-              &nbsp;&nbsp;<span className="text-red-400">passion</span>: <span className="text-yellow-400">"Cutting-edge tech"</span>
-              <br />
-              {"}"};
-            </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              Elite developer specializing in modern web architectures, scalable systems, 
-              and performance optimization. Always pushing the boundaries of what's possible 
-              with technology.
-            </p>
-            
-            <div className="flex flex-wrap gap-4 pt-6">
-              <span className="px-4 py-2 bg-blue-900 text-cyan-400 border border-cyan-400 rounded font-mono text-sm font-bold">REACT</span>
-              <span className="px-4 py-2 bg-green-900 text-green-400 border border-green-400 rounded font-mono text-sm font-bold">NODE.JS</span>
-              <span className="px-4 py-2 bg-purple-900 text-purple-400 border border-purple-400 rounded font-mono text-sm font-bold">TYPESCRIPT</span>
-              <span className="px-4 py-2 bg-yellow-900 text-yellow-400 border border-yellow-400 rounded font-mono text-sm font-bold">PYTHON</span>
-            </div>
-          </div>
-          
-          <div className="grid gap-6">
-            <div className="flex items-start space-x-4 p-6 bg-black border border-cyan-400 rounded-lg shadow-lg shadow-cyan-400/10">
-              <div className="p-3 bg-cyan-600 rounded-lg">
-                <Code className="text-black" size={24} />
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-gray-900 border-gray-700 hover:border-cyan-400 shadow-lg">
+              <div className="relative overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className={`absolute top-4 right-4 px-3 py-1 border rounded font-mono text-xs ${getStatusColor(project.status)}`}>
+                  {project.status}
+                </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-2 font-mono">CLEAN_CODE</h3>
-                <p className="text-gray-300">Architecting robust, maintainable systems with enterprise-grade standards.</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-4 p-6 bg-black border border-green-400 rounded-lg shadow-lg shadow-green-400/10">
-              <div className="p-3 bg-green-600 rounded-lg">
-                <Shield className="text-black" size={24} />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-2 font-mono">SECURITY_FIRST</h3>
-                <p className="text-gray-300">Implementing bulletproof security measures and best practices in every project.</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-4 p-6 bg-black border border-red-400 rounded-lg shadow-lg shadow-red-400/10">
-              <div className="p-3 bg-red-600 rounded-lg">
-                <Zap className="text-black" size={24} />
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-2 font-mono">PERFORMANCE</h3>
-                <p className="text-gray-300">Optimizing for maximum speed, efficiency, and seamless user experiences.</p>
-              </div>
-            </div>
-          </div>
+              
+              <CardHeader>
+                <CardTitle className="text-xl font-bold text-white font-mono">{project.title}</CardTitle>
+                <CardDescription className="text-gray-300">
+                  {project.description}
+                </CardDescription>
+              </CardHeader>
+              
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech, techIndex) => (
+                    <span 
+                      key={techIndex}
+                      className="px-3 py-1 bg-black border border-gray-600 text-gray-300 rounded font-mono text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+              
+              <CardFooter className="flex gap-3">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="flex-1 border-gray-600 text-gray-300 hover:border-cyan-400 hover:text-cyan-400 transition-colors font-mono"
+                  onClick={() => window.open(project.github, '_blank')}
+                >
+                  <Github size={16} className="mr-2" />
+                  CODE
+                </Button>
+                <Button 
+                  size="sm" 
+                  className="flex-1 bg-cyan-600 hover:bg-cyan-500 text-black font-bold font-mono"
+                  onClick={() => window.open(project.live, '_blank')}
+                >
+                  <Terminal size={16} className="mr-2" />
+                  DEPLOY
+                </Button>
+              </CardFooter>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
   );
 };
 
-export default About;
+export default Projects;
