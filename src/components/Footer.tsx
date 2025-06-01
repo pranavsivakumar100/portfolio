@@ -48,8 +48,8 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 flex items-center font-mono">
+        <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+          <p className="text-gray-400 flex items-center justify-center font-mono">
             <Terminal size={16} className="mx-1 text-cyan-400" /> 
             Coded with precision by JOHN&gt;DEV
           </p>
