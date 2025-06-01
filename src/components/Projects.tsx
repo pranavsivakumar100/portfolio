@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: "NOTES_FOR_DEVS",
       description: "I couldn't find a note-taking platform tailored for Computer Science students like myself, so I made my own.",
-      image: "/bedrock3.png",
+      image: "/bedrock1.png",
       tech: ["REACT", "TYPESCRIPT", "PYTHON", "TAILWIND CSS"],
       github: "https://github.com/pranavsivakumar100/bedrock-notes",
       live: "https://bedrock-notes.netlify.app/",
@@ -16,9 +16,9 @@ const Projects = () => {
     },
     {
       title: "CRYPTO_CROWDFUNDING",
-      description: "Built a Web3 crowdfunding platform where people can get funds for projects through Cryptocurrency. It features smart contracts for campaign management and transactions, a React-based user interface for campaign creation and tracking, and seamless Ethereum blockchain integration via Web3.",
-      image: "/bedrock3.png",
-      tech: ["REACT", "TYPESCRIPT", "PYTHON", "TAILWIND CSS"],
+      description: "Built a Web3 crowdfunding platform where people can get funds for projects through Cryptocurrency via donations. It features smart contracts, a UI for campaign creation and tracking, and Ethereum blockchain integration.",
+      image: "/crowdfunding",
+      tech: ["SOLIDITY", "REACT", "NODE.JS"],
       github: "https://github.com/pranavsivakumar100/bedrock-notes",
       live: "https://bedrock-notes.netlify.app/",
       status: "DEPLOYED"
