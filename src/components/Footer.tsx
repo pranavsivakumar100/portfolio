@@ -25,7 +25,7 @@ const Footer = () => {
               <a href="https://github.com/pranavsivakumar100" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Github size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/pranav-s-b5925b212/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a href="https://www.linkedin.com/in/pranavsivakumar05/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 <Linkedin size={20} />
               </a>
               <a href="mailto:pranav.sivakumar100@gmail.com" className="text-gray-400 hover:text-cyan-400 transition-colors">
@@ -47,9 +47,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-purple-400 font-mono">QUICK_LINKS</h4>
             <ul className="space-y-2 text-gray-400 font-mono">
-              <li><a href="https://www.linkedin.com/in/pranav-s-b5925b212/" className="hover:text-purple-400 transition-colors">&gt; Resume</a></li>
+              <li><a href="https://www.linkedin.com/in/pranavsivakumar05/" className="hover:text-purple-400 transition-colors">&gt; Resume</a></li>
               <li><a href="https://github.com/pranavsivakumar100" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">&gt; GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/pranav-s-b5925b212/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">&gt; LinkedIn</a></li>
+              <li><a href="https://www.linkedin.com/in/pranavsivakumar05/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">&gt; LinkedIn</a></li>
               <li><button onClick={() => scrollToSection('contact')} className="hover:text-purple-400 transition-colors">&gt; Get In Touch</button></li>
             </ul>
           </div>
