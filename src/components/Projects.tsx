@@ -20,7 +20,7 @@ const Projects = () => {
       image: "/crowdfunding.png",
       tech: ["SOLIDITY", "REACT", "NODE.JS"],
       github: "https://github.com/pranavsivakumar100",
-      live: "blockchain-crowdfunding-platform.netlify.app",
+      live: "https://blockchain-crowdfunding-platform.netlify.app/",
       status: "DEPLOYED"
     }
   ];
