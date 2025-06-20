@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const Projects = () => {
   const projects = [
     {
-      title: "NOTES_FOR_DEVS",
+      title: "Bedrock Notes- Made Easy for CS Students",
       description: "I couldn't find a note-taking platform tailored for Computer Science students like myself, so I made my own.",
       image: "/bedrock1.png",
       tech: ["REACT", "TYPESCRIPT", "TAILWIND CSS"],
@@ -15,13 +15,20 @@ const Projects = () => {
       status: "DEPLOYED"
     },
     {
-      title: "CRYPTO_CROWDFUNDING",
+      title: "Crypto Crowdfunding Platform",
       description: "Built a Web3 crowdfunding platform where people can get funds for projects through Cryptocurrency via donations. It features smart contracts, a UI for campaign creation and tracking, and Ethereum blockchain integration.",
       image: "/crowdfunding.png",
-      tech: ["SOLIDITY", "REACT", "NODE.JS"],
+      tech: ["SOLIDITY", "REACT.JS", "NODE.JS"],
       github: "https://github.com/pranavsivakumar100/Blockchain-Crowdfunding",
       live: "https://blockchain-crowdfunding-platform.netlify.app/",
       status: "DEPLOYED"
+    },
+    {
+      title: "Uber Eats Account Generation",
+      description: "Automated account creation for promotion collection. I also made an account checkout bot that logs into an account with a promo, applies promo to the order total, and then places the order bypassing all bot protection. I did this through API requests.",
+      image: "/ubereats.png",
+      tech: ["PYTHON", "BASH", "BURP SUITE"],
+      status: "PRIVATE"
     }
   ];
 
