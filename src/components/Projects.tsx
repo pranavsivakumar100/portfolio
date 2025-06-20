@@ -25,7 +25,7 @@ const Projects = () => {
     },
     {
       title: "Uber Eats Account Generation",
-      description: "Automated account creation for promotion collection. I also made an account checkout bot that logs into an account with a promo, applies promo to the order total, and then places the order bypassing all bot protection. I did this through API requests.",
+      description: "Automated mass account creation for collecting promos and using it for delivery orders. I also made an account checkout bot that logs into an account with a promo, applies promo to the order total, and then places the order bypassing all bot protection. I did this through the use of residential proxies and sending API requests by pentesting using Burp.",
       image: "/ubereats.png",
       tech: ["PYTHON", "BASH", "BURP SUITE"],
       status: "PRIVATE"
