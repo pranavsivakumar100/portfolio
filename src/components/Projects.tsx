@@ -9,7 +9,7 @@ const Projects = () => {
       title: "Pranav's Job Scraper",
       description: "I am currently in the works of a personal job scraper. Everyday, it scrapes the latest job postings from my favorite companies' career pages.",
       image: "/briefcase.png",
-      tech: ["PYTHON", "BASH", "NODE.JS", "POSTGRESQL","VERCEL"],
+      tech: ["PYTHON", "BASH", "NODE.JS", "POSTGRESQL","VERCEL", "SUPABASE"],
       live: "https://tech-job-scraper.netlify.app/",
       github: "https://github.com/pranavsivakumar100/",
       status: "DEPLOYED"
