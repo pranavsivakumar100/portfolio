@@ -6,6 +6,14 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const Projects = () => {
   const projects = [
     {
+      title: "Pranav's Job Scraper",
+      description: "I am currently in the works of a personal job scraper. Everyday, it scrapes the latest job postings from my favorite companies' career pages.",
+      image: "/bedrock1.png",
+      tech: ["REACT", "TYPESCRIPT", "TAILWIND CSS"],
+      live: "https://tech-job-scraper.netlify.app/",
+      status: "DEPLOYED"
+    },
+    {
       title: "Bedrock Notes- Made Easy for CS Students",
       description: "I couldn't find a note-taking platform tailored for Computer Science students like myself, so I made my own.",
       image: "/bedrock1.png",
