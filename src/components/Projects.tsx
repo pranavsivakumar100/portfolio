@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: "Pranav's Job Scraper",
       description: "I am currently in the works of a personal job scraper. Everyday, it scrapes the latest job postings from my favorite companies' career pages.",
-      image: "/bedrock1.png",
+      image: "/briefcase.png",
       tech: ["REACT", "TYPESCRIPT", "TAILWIND CSS"],
       live: "https://tech-job-scraper.netlify.app/",
       status: "DEPLOYED"
