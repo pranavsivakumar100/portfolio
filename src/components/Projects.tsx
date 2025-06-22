@@ -33,9 +33,9 @@ const Projects = () => {
     },
     {
       title: "Uber Eats Automation Suite: Account Generation Bot, Order Placing Bot, Balance and Promotion Verifier",
-      description: "Automated mass account creation for collecting promotions. I also made an account checkout bot that logs into a generated account with a promo, applies promo to the order total, and then places the order bypassing bot protection. I did this through the use of residential proxies, interacting with Uber API endpoints, and pentesting using Burp.",
+      description: "Automated mass account creation for collecting promotions. I also made an account checkout bot that logs into a generated account with a promo, applies promo to the order total, and then places the order bypassing bot protection (I needed to do this part through the Android app, interacting with an old API version and App SDK). In general, I did this through the use of residential proxies, interacting with Uber API endpoints, and pentesting using Burp.",
       image: "/ubereats.png",
-      tech: ["PYTHON", "BASH", "ANDROID/iOS", ""],
+      tech: ["PYTHON", "BASH", "ANDROID/iOS tools"],
       status: "PRIVATE"
     },
     {
