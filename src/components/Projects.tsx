@@ -32,15 +32,15 @@ const Projects = () => {
       status: "DEPLOYED"
     },
     {
-      title: "Uber Eats Account Generation",
-      description: "Automated mass account creation for collecting promos and using it for getting discounted delivery orders. I also made an account checkout bot that logs into an account with a promo, applies promo to the order total, and then places the order bypassing all bot protection. I did this through the use of residential proxies, interacting with API endpoints, and pentesting using Burp.",
+      title: "Uber Eats Account Generation and Order Placement",
+      description: "Automated mass account creation for collecting promotions. I also made an account checkout bot that logs into a generated account with a promo, applies promo to the order total, and then places the order bypassing all bot protection. I did this through the use of residential proxies, interacting with Uber API endpoints, and pentesting using Burp.",
       image: "/ubereats.png",
-      tech: ["PYTHON", "BASH", "BURP SUITE"],
+      tech: ["PYTHON", "BASH", "ANDROID/iOS", ""],
       status: "PRIVATE"
     },
     {
       title: "Instacart Account Generation",
-      description: "Automated mass account creation for collecting promos and using it for getting discounted delivery orders. Kind of similar to Uber Eats bot but needed Captcha Solving, so I implemented my own captcha solver using a Convulational Neural Network. Haven't worked on the account checkout bot for this since it works manually due to weak bot protection.",
+      description: "Automated mass account creation for collecting promotions. Kind of similar to Uber Eats bot but needed Captcha Solving, so I implemented my own captcha solver using a Convulational Neural Network. Haven't worked on the account checkout bot for this since order placement works manually.",
       image: "/instacart.png",
       tech: ["PYTHON", "BASH", "BURP SUITE"],
       status: "PRIVATE"
