@@ -33,16 +33,16 @@ const Projects = () => {
     },
     {
       title: "Uber Eats Automation Suite: Account Generation Bot, Order Placing Bot, Balance and Promotion Verifier",
-      description: "Automated mass account creation for collecting promotions. I also made an account checkout bot that logs into a generated account with a promo, applies promo to the order total, and then places the order bypassing bot protection (I needed to do this part through the Android app, interacting with an old API version and App SDK). In general, I did this through the use of residential proxies, interacting with Uber API endpoints, and pentesting using Burp Suite.",
+      description: "Automated mass account creation for collecting promotions. I also made an account checkout bot that logs into a generated account with a promo, applies promo to the order total, and then places the order bypassing bot protection (I needed to do this part through Android Studio, interacting with an old version of the app). In general, I did this through the use of residential proxies, interacting with Uber API endpoints, and pentesting using Burp Suite.",
       image: "/ubereats.png",
-      tech: ["PYTHON", "BASH", "ANDROID STUDIO", "JAVA"],
+      tech: ["PYTHON", "BASH", "ANDROID STUDIO", "JAVA", "RESIDENTIAL PROXIES", "BURP SUITE"],
       status: "PRIVATE"
     },
     {
       title: "Instacart Account Generation",
       description: "Automated mass account creation for collecting promotions. I built two prototypes- a driver gen and requests gen. One interacts with Uber API endpoints and Next-Captcha Solver. The other protype uses Selenium instead of API requests and a custom captcha solver I implemented using a Convulational Neural Network. Haven't worked on the account checkout bot for this since order placement works manually.",
       image: "/instacart.png",
-      tech: ["PYTHON", "BASH", "BURP SUITE"],
+      tech: ["PYTHON", "BASH", "RESIDENTIAL PROXIES", "BURP SUITE"],
       status: "PRIVATE"
     }
   ];
