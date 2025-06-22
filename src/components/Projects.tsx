@@ -40,7 +40,7 @@ const Projects = () => {
     },
     {
       title: "Instacart Account Generation",
-      description: "Automated mass account creation for collecting promos and using it for getting discounted delivery orders. Kind of similar to Uber Eats bot but needed Captcha Solving, so I implemented my own captcha solver using a Convulational Neural Network.",
+      description: "Automated mass account creation for collecting promos and using it for getting discounted delivery orders. Kind of similar to Uber Eats bot but needed Captcha Solving, so I implemented my own captcha solver using a Convulational Neural Network. Haven't worked on the account checkout bot for this since it works manually due to weak bot protection.",
       image: "/instacart.png",
       tech: ["PYTHON", "BASH", "BURP SUITE"],
       status: "PRIVATE"
