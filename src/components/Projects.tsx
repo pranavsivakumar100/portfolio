@@ -16,7 +16,7 @@ const Projects = () => {
     },
     {
       title: "Bedrock Notes- Made Easy for CS Students",
-      description: "I couldn't find a note-taking platform tailored for Computer Science students like myself, so I made my own.",
+      description: "I couldn't find a note-taking platform tailored for Computer Science students like myself, so I made my own. Some cool features are abilities to create runnable code snippets and a whiteboard for storing diagrams and visual stuff.",
       image: "/bedrock1.png",
       tech: ["REACT", "TYPESCRIPT","SUPABASE"],
       github: "https://github.com/pranavsivakumar100/bedrock-notes",
