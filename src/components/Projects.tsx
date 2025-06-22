@@ -52,7 +52,7 @@ const Projects = () => {
       case "DEPLOYED": return "text-green-400 border-green-400";
       case "ACTIVE": return "text-cyan-400 border-cyan-400";
       case "BETA": return "text-yellow-400 border-yellow-400";
-      default: return "text-gray-400 border-gray-400";
+      default: return "text-black border-black";
     }
   };
 
