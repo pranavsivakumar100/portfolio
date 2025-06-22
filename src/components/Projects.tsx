@@ -105,25 +105,31 @@ const Projects = () => {
                 </div>
               </CardContent>
               
-              <CardFooter className="flex gap-3">
-                <Button 
-                  variant="outline" 
-                  size="sm" 
-                  className="flex-1 border-gray-600 text-gray-300 hover:border-cyan-400 hover:text-cyan-400 transition-colors font-mono"
-                  onClick={() => window.open(project.github, '_blank')}
-                >
-                  <Github size={16} className="mr-2" />
-                  CODE
-                </Button>
-                <Button 
-                  size="sm" 
-                  className="flex-1 bg-cyan-600 hover:bg-cyan-500 text-black font-bold font-mono"
-                  onClick={() => window.open(project.live, '_blank')}
-                >
-                  <Terminal size={16} className="mr-2" />
-                  DEPLOY
-                </Button>
-              </CardFooter>
+              {(project.github || project.live) && (
+                <CardFooter className="flex gap-3">
+                  {project.github && (
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="flex-1 border-gray-600 text-gray-300 hover:border-cyan-400 hover:text-cyan-400 transition-colors font-mono"
+                      onClick={() => window.open(project.github, '_blank')}
+                    >
+                      <Github size={16} className="mr-2" />
+                      CODE
+                    </Button>
+                  )}
+                  {project.live && (
+                    <Button 
+                      size="sm" 
+                      className="flex-1 bg-cyan-600 hover:bg-cyan-500 text-black font-bold font-mono"
+                      onClick={() => window.open(project.live, '_blank')}
+                    >
+                      <Terminal size={16} className="mr-2" />
+                      DEPLOY
+                    </Button>
+                  )}
+                </CardFooter>
+              )}
             </Card>
           ))}
         </div>
