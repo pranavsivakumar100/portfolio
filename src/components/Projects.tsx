@@ -9,15 +9,16 @@ const Projects = () => {
       title: "Pranav's Job Scraper",
       description: "I am currently in the works of a personal job scraper. Everyday, it scrapes the latest job postings from my favorite companies' career pages.",
       image: "/briefcase.png",
-      tech: ["REACT", "TYPESCRIPT", "TAILWIND CSS"],
+      tech: ["PYTHON", "BASH", "NODE.JS", "POSTGRESQL","VERCEL"],
       live: "https://tech-job-scraper.netlify.app/",
+      github: "https://github.com/pranavsivakumar100/",
       status: "DEPLOYED"
     },
     {
       title: "Bedrock Notes- Made Easy for CS Students",
       description: "I couldn't find a note-taking platform tailored for Computer Science students like myself, so I made my own.",
       image: "/bedrock1.png",
-      tech: ["REACT", "TYPESCRIPT", "TAILWIND CSS"],
+      tech: ["REACT", "TYPESCRIPT","SUPABASE"],
       github: "https://github.com/pranavsivakumar100/bedrock-notes",
       live: "https://bedrock-notes.netlify.app/",
       status: "DEPLOYED"
