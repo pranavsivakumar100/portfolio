@@ -40,10 +40,10 @@ const Projects = () => {
       status: "PRIVATE"
     },
     {
-      title: "Instacart Account Generation",
+      title: "Instacart Account Generation Bot",
       description: "Automated mass account creation for collecting promotions. I built two prototypes- a driver gen and requests gen. One interacts with Instacart API endpoints and Next-Captcha Solver. The other protype uses Selenium instead of API requests and a custom captcha solver I implemented using a Convulational Neural Network. Haven't worked on the account checkout bot for this since order placement works by simply manually logging into the generated account, applying the promotion, and checking out.",
       image: "/instacart.png",
-      tech: ["PYTHON", "BASH", "RESIDENTIAL PROXIES", "BURP SUITE"],
+      tech: ["PYTHON", "BASH", , "BURP SUITE", "RESIDENTIAL PROXIES"],
       status: "PRIVATE"
     }
   ];
