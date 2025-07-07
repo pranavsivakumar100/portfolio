@@ -12,7 +12,7 @@ const Projects = () => {
       tech: ["PYTHON", "BASH", "NODE.JS", "POSTGRESQL","VERCEL", "SUPABASE"],
       live: "https://tech-job-scraper.netlify.app/",
       github: "https://github.com/pranavsivakumar100/",
-      status: "DEPLOYED"
+      status: "DEPLOY"
     },
     {
       title: "Bedrock Notes- Made Easy for CS Students",
