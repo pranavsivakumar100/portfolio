@@ -1,11 +1,75 @@
 
-import { Mail, MapPin, Phone, Terminal } from "lucide-react";
+import { Mail, MapPin, Phone, Terminal, CheckCircle, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useForm } from "react-hook-form";
+import emailjs from '@emailjs/browser';
+import { useState, useEffect } from "react";
+
+interface FormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  subject: string;
+  message: string;
+}
 
 const Contact = () => {
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormData>();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init('2ZIiHjv907tiZvogT');
+  }, []);
+
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+    
+    try {
+      // EmailJS is now configured with your credentials
+      const isEmailJSConfigured = true;
+      
+      if (isEmailJSConfigured) {
+        // EmailJS method
+        const templateParams = {
+          from_name: `${data.firstName} ${data.lastName}`,
+          from_email: data.email,
+          subject: data.subject,
+          message: data.message,
+          to_email: 'pranav.sivakumar100@gmail.com',
+        };
+
+        await emailjs.send(
+          'service_8ncf57q',
+          'template_c6x8tr1',
+          templateParams
+        );
+      } else {
+        // Fallback: Open default email client
+        const subject = encodeURIComponent(data.subject);
+        const body = encodeURIComponent(
+          `From: ${data.firstName} ${data.lastName} (${data.email})\n\nMessage:\n${data.message}`
+        );
+        const mailtoUrl = `mailto:pranav.sivakumar100@gmail.com?subject=${subject}&body=${body}`;
+        
+        window.open(mailtoUrl, '_blank');
+      }
+      
+      setSubmitStatus('success');
+      reset(); // Clear the form
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-20 px-4 bg-black text-white">
       <div className="max-w-6xl mx-auto">
@@ -71,33 +135,90 @@ const Contact = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <Input 
-                  placeholder="First name" 
-                  className="bg-black border-gray-600 text-white placeholder-gray-400 font-mono"
-                />
-                <Input 
-                  placeholder="Last name" 
-                  className="bg-black border-gray-600 text-white placeholder-gray-400 font-mono"
-                />
-              </div>
-              <Input 
-                placeholder="Email address" 
-                type="email" 
-                className="bg-black border-gray-600 text-white placeholder-gray-400 font-mono"
-              />
-              <Input 
-                placeholder="Subject" 
-                className="bg-black border-gray-600 text-white placeholder-gray-400 font-mono"
-              />
-              <Textarea 
-                placeholder="Your message..." 
-                className="min-h-[120px] bg-black border-gray-600 text-white placeholder-gray-400 font-mono"
-              />
-              <Button className="w-full bg-cyan-600 hover:bg-cyan-500 text-black font-bold font-mono">
-                <Terminal className="mr-2" size={16} />
-                TRANSMIT_MESSAGE
-              </Button>
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <Input 
+                      {...register("firstName", { required: "First name is required" })}
+                      placeholder="First name" 
+                      className="bg-black border-gray-600 text-white placeholder-gray-400 font-mono"
+                    />
+                    {errors.firstName && (
+                      <p className="text-red-400 text-sm mt-1 font-mono">{errors.firstName.message}</p>
+                    )}
+                  </div>
+                  <div>
+                    <Input 
+                      {...register("lastName", { required: "Last name is required" })}
+                      placeholder="Last name" 
+                      className="bg-black border-gray-600 text-white placeholder-gray-400 font-mono"
+                    />
+                    {errors.lastName && (
+                      <p className="text-red-400 text-sm mt-1 font-mono">{errors.lastName.message}</p>
+                    )}
+                  </div>
+                </div>
+                <div>
+                  <Input 
+                    {...register("email", { 
+                      required: "Email is required",
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "Invalid email address"
+                      }
+                    })}
+                    placeholder="Email address" 
+                    type="email" 
+                    className="bg-black border-gray-600 text-white placeholder-gray-400 font-mono"
+                  />
+                  {errors.email && (
+                    <p className="text-red-400 text-sm mt-1 font-mono">{errors.email.message}</p>
+                  )}
+                </div>
+                <div>
+                  <Input 
+                    {...register("subject", { required: "Subject is required" })}
+                    placeholder="Subject" 
+                    className="bg-black border-gray-600 text-white placeholder-gray-400 font-mono"
+                  />
+                  {errors.subject && (
+                    <p className="text-red-400 text-sm mt-1 font-mono">{errors.subject.message}</p>
+                  )}
+                </div>
+                <div>
+                  <Textarea 
+                    {...register("message", { required: "Message is required" })}
+                    placeholder="Your message..." 
+                    className="min-h-[120px] bg-black border-gray-600 text-white placeholder-gray-400 font-mono"
+                  />
+                  {errors.message && (
+                    <p className="text-red-400 text-sm mt-1 font-mono">{errors.message.message}</p>
+                  )}
+                </div>
+                
+                {submitStatus === 'success' && (
+                  <div className="flex items-center gap-2 p-3 bg-green-900 border border-green-400 rounded text-green-400 font-mono">
+                    <CheckCircle size={16} />
+                    <span>Message transmitted successfully!</span>
+                  </div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <div className="flex items-center gap-2 p-3 bg-red-900 border border-red-400 rounded text-red-400 font-mono">
+                    <AlertCircle size={16} />
+                    <span>Transmission failed. Please try again.</span>
+                  </div>
+                )}
+                
+                <Button 
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-cyan-600 hover:bg-cyan-500 text-black font-bold font-mono disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <Terminal className="mr-2" size={16} />
+                  {isSubmitting ? 'TRANSMITTING...' : 'TRANSMIT_MESSAGE'}
+                </Button>
+              </form>
             </CardContent>
           </Card>
         </div>
