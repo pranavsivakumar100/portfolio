@@ -18,7 +18,7 @@ const Footer = () => {
               PRANAV SIVAKUMAR
             </h3>
             <p className="text-gray-400 mb-4 font-mono">
-              Elite developer crafting next-generation digital experiences 
+              Developer crafting next-generation digital experiences 
               with cutting-edge technology stacks.
             </p>
             <div className="flex space-x-4">
