@@ -34,21 +34,21 @@ const Projects = () => {
     },
     {
       title: "Uber Eats Automation Suite: Account Generation Bot, Order Placing Bot, Balance and Promotion Verifier",
-      description: "Automated mass account creation for collecting promotions. I also made an account checkout bot that logs into a generated account with a promo, applies promo to the order total, and then places the order bypassing bot protection (I needed to do this part through Android Studio, interacting with an old version of the app). In general, I did this through the use of residential proxies, interacting with Uber API endpoints, and pentesting using Burp Suite.",
+      description: "Automated account creation and made an account checkout bot that logs into a generated account with a promo, applies promo to the order total, and then places the order bypassing bot protection (I needed to do this part through Android Studio, interacting with an old version of the app). In general, I did this through the use of residential proxies, interacting with Uber API endpoints, and pentesting using Burp Suite.",
       image: "/ubereats.png",
       tech: ["PYTHON", "BASH", "ANDROID","RESIDENTIAL PROXIES", "BURP SUITE"],
       status: "PRIVATE"
     },
     {
-      title: "Instacart Account Generation Bot",
-      description: "Automated mass account creation for collecting promotions. I built two prototypes- a driver gen and requests gen. One interacts with Instacart API endpoints and Next-Captcha Solver. The other protype uses Selenium instead of API requests and a custom captcha solver I implemented using a Convulational Neural Network. Haven't worked on the account checkout bot for this since order placement works by simply manually logging into the generated account, applying the promotion, and checking out.",
+      title: "Instacart Automation Suite",
+      description: "Automated account creation and learned how to bypass captchas. I built two prototypes- a driver gen and requests gen. One interacts with Instacart API endpoints and Next-Captcha Solver. The other protype uses Selenium instead of API requests and a custom captcha solver I implemented using a Convulational Neural Network.",
       image: "/instacart.png",
       tech: ["PYTHON", "BASH", "BURP SUITE", "RESIDENTIAL PROXIES"],
       status: "PRIVATE"
     },
     {
       title: "Goat and Nike Sneaker Checkout Bot",
-      description: "I made this project as a former sneaker reseller. The bot constantly looks for particular on-demand sneaker(s) and places order given necessary info. I implemented captcha solving to bypass captchas.",
+      description: "I made this project as a sneaker enthusiast. The bot constantly looks for particular on-demand sneaker(s) and places order given necessary info. I implemented captcha solving to bypass captchas.",
       image: "/sneaker.png",
       tech: ["PYTHON", "BASH", "BURP SUITE", "RESIDENTIAL PROXIES"],
       status: "PRIVATE"
