@@ -34,7 +34,7 @@ const About = () => {
               {"}"};
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Elite developer specializing in modern web architectures, scalable systems, 
+              Developer specializing in modern web architectures, scalable systems, 
               and performance optimization. Always pushing the boundaries of what's possible 
               with technology.
             </p>
