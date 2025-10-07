@@ -41,9 +41,9 @@ const About = () => {
             
             <div className="flex flex-wrap gap-4 pt-6">
               <span className="px-4 py-2 bg-blue-900 text-cyan-400 border border-cyan-400 rounded font-mono text-sm font-bold">Full Stack</span>
-              <span className="px-4 py-2 bg-green-900 text-green-400 border border-green-400 rounded font-mono text-sm font-bold">AI/ML</span>
-              <span className="px-4 py-2 bg-purple-900 text-purple-400 border border-purple-400 rounded font-mono text-sm font-bold">Cybersecurity</span>
-              <span className="px-4 py-2 bg-yellow-900 text-yellow-400 border border-yellow-400 rounded font-mono text-sm font-bold">Blockchain</span>
+              <span className="px-4 py-2 bg-green-900 text-green-400 border border-green-400 rounded font-mono text-sm font-bold">Agentic AI</span>
+              <span className="px-4 py-2 bg-purple-900 text-purple-400 border border-purple-400 rounded font-mono text-sm font-bold">Automation</span>
+              <span className="px-4 py-2 bg-yellow-900 text-yellow-400 border border-yellow-400 rounded font-mono text-sm font-bold">Pentesting</span>
             </div>
           </div>
           
